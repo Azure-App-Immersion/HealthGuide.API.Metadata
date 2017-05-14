@@ -24,6 +24,7 @@ namespace HealthGuide.API.Metadata
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<LocationsContext>();
+            services.AddTransient<DoctorsContext>();
             services.AddMvc();
         }
 

@@ -25,7 +25,7 @@ namespace HealthcareAPI.Controllers
         [HttpGet("{id}")]
         public Location Get(string id)
         {
-            return _locationsContext.Locations.Find(l => l.Id == id);
+            return _locationsContext.Locations.Find(location => location.Id == id);
         }
     }
 }
