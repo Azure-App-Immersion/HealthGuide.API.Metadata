@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 
 namespace HealthGuide.API.Metadata
 {
@@ -25,7 +26,11 @@ namespace HealthGuide.API.Metadata
         {
             services.AddTransient<LocationsContext>();
             services.AddTransient<DoctorsContext>();
-            services.AddMvc();
+            services.AddMvc()
+               .AddJsonOptions(options =>
+               {
+                   options.SerializerSettings.ContractResolver = new DefaultContractResolver();
+               });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
