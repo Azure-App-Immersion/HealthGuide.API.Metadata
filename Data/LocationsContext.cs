@@ -1,7 +1,7 @@
-using HealthcareAPI.Models;
+using HealthGuide.API.Metadata.Models;
 using System.Collections.Generic;
 
-namespace HealthcareAPI.Data
+namespace HealthGuide.API.Metadata.Data
 {
     public class LocationsContext
     {

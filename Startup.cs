@@ -1,4 +1,4 @@
-﻿using HealthcareAPI.Data;
+﻿using HealthGuide.API.Metadata.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;

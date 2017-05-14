@@ -1,4 +1,4 @@
-namespace HealthcareAPI.Models
+namespace HealthGuide.API.Metadata.Models
 {
     public sealed class Doctor : Entity 
     {}

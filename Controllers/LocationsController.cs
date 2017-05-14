@@ -1,9 +1,9 @@
-﻿using HealthcareAPI.Data;
-using HealthcareAPI.Models;
+﻿using HealthGuide.API.Metadata.Data;
+using HealthGuide.API.Metadata.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 
-namespace HealthcareAPI.Controllers
+namespace HealthGuide.API.Metadata.Controllers
 {
     [Route("[controller]")]
     [ResponseCache(Duration = 30)]
