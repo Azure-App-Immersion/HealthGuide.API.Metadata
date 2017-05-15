@@ -26,11 +26,7 @@ namespace HealthGuide.API.Metadata
         {
             services.AddTransient<LocationsContext>();
             services.AddTransient<DoctorsContext>();
-            services.AddMvc()
-               .AddJsonOptions(options =>
-               {
-                   options.SerializerSettings.ContractResolver = new DefaultContractResolver();
-               });
+            services.AddMvc();
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
