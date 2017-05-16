@@ -40,6 +40,13 @@ namespace HealthGuide.API.Metadata
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
+            app.UseCors(options => {
+                options
+                    .AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod()
+                    .AllowCredentials();
+            });
             app.UseMvcWithDefaultRoute();
             app.UseStaticFiles();
 
